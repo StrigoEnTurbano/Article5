@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="AstHelpers.fsx" />
+		<None Include="RecordExts.fsx" />
+		<None Include="UnionExts.fsx" />
+		<None Include="MyAstHelpers.fsx" />
+		<None Include="Generator.Literals.fs" />
+		<Compile Include="Data\Stage1.Handmade.fs" />
+		<None Include="Data\Stage1.Generator.fsx" />
+		<Compile Include="Data\Stage1.Generated.fs" />
+		<Compile Include="Data\Stage2.Handmade.fs" />
+		<None Include="Data\Stage2.Generator.fsx" />
+		<Compile Include="Data\Stage2.Generated.fs" />
+		<None Include="Relations\Generator.Relations.Setup.fsx" />
+		<Compile Include="Relations\Stage3.Handmade.fs" />
+		<None Include="Relations\Stage3.Generator.fsx" />
+		<Compile Include="Relations\Stage3.Generated.fs" />
+		<Compile Include="Relations\Stage4.Handmade.fs" />
+		<None Include="Relations\Stage4.Generator.fsx" />
+		<Compile Include="Relations\Stage4.Generated.fs" />
+		<None Include="Routes\Generator.Routes.Setup.fsx" />
+		<Compile Include="Routes\Stage5.Handmade.fs" />
+		<None Include="Routes\Stage5.Generator.fsx" />
+		<Compile Include="Routes\Stage5.Generated.fs" />
+		<None Include="Check.fsx" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FSharpx.Collections" Version="3.1.0" />
+	</ItemGroup>
+
+</Project>
